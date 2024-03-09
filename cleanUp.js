@@ -7,38 +7,37 @@
     // using `node cleanUp.js` or copy and paste into a replit
 
 
-// EX 1:
-function askForName() { console.log("Hello, what is your name?") }
+// EX 1: changed the function name to something less wordy, removed the console.log to just have it return the statement to the function when its called.
+function greeting() { 
+  return ("Hello, what is your name?") }
 
-askForName()
-
-
-// EX 2:
-function addThreeNums(first, second, third) {
-var sum = first + second + third
-return sum;
-      }
-
-addThreeNums(1, 2, 3);
-addThreeNums(4, 2, 7);
+greeting()
 
 
-// EX 3:
-func makeFreshPesto(){
+// EX 2:changed function name, added a return statement to be called in the console.
+function sumNums(first, second, third){
+  return first + second + third
+}
+
+sumNums(1, 2, 3);
+sumNums(4, 2, 7);
+
+
+// EX 3: completed the function name as it was mispelled, moved the last curly bracket to align with the function code to look more pleasing. proper structure i suppose.
+function makeFreshPesto(){
   console.log("Buy ingredients: basil, parmesan, romano, olive oil, pine nuts, garlic, salt, pepper");
   console.log("Pulse basil and pine nuts");
   console.log("Add garlic and cheeses");
   console.log("Slowly pour in oil");
-  console.log("Season");    }
+  console.log("Season");  
+}
 
 makeFreshPesto();
 
 
-//  EX 4:
-function average(num1, num2) 
-  {
-var sum = num1 + num2;
-    var avg = sum / 2;
-
-return avg
-  }
+//  EX 4: moved the last curly brace down. and added a semicolen closure to line 41.
+function average(num1, num2) {
+  var sum = num1 + num2;
+  var avg = sum / 2;
+  return avg;
+}
